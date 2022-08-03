@@ -17,6 +17,7 @@ contract SimpleStorage {
     People[] public people;
 
     mapping(string => uint256) public nameToFavoriteNumber;
+    mapping(address => uint256) public addressToTransfer;
 
     function store(uint256 _favoriteNumber) public {
         favoriteNumber = _favoriteNumber;
