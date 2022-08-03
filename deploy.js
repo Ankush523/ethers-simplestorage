@@ -21,7 +21,6 @@ async function main() {
   console.log(contract);
 
   const transactionReceipt = await contract.deployTransaction.wait(1);
-  console.log("Let's deploy transaction data...")
   //   const nonce = await wallet.getTransactionCount();
   //   const tx = {
   //     nonce: nonce,
