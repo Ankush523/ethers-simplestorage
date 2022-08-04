@@ -37,6 +37,8 @@ async function main() {
   //   console.log(signedTxResponse);
 }
 
+const currentFavoriteNumber = await contract.retrieve()
+
 main()
   .then(() => process.exit(0))
   .catch((error) => {
